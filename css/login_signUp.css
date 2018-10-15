@@ -1,0 +1,90 @@
+.web {
+  width: 1330px; }
+
+.box {
+  width: 80%;
+  height: 1145px;
+  margin: 25px auto 170px; }
+  .box .login_text {
+    margin-top: 45px;
+    margin-left: 10%;
+    font-weight: bold;
+    font-size: 18px; }
+  .box .login_mail {
+    margin-top: 28px;
+    margin-left: 10%;
+    margin-bottom: 14px;
+    line-height: 20px; }
+  .box input[type="text"] {
+    display: block;
+    margin: 0 0 0 10%;
+    width: 80%;
+    height: 38px;
+    border-radius: 5px;
+    padding-left: 5px; }
+  .box input[type="password"] {
+    display: block;
+    margin: 0 0 0 10%;
+    width: 80%;
+    height: 38px;
+    border-radius: 5px;
+    padding-left: 5px; }
+  .box input[type="submit"] {
+    display: block;
+    margin: 43px 0 0 10%;
+    width: 80%;
+    height: 38px;
+    border-radius: 5px;
+    background: #584c4c;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer; }
+  .box .find {
+    margin: 35px 0 0 10%;
+    width: 80%;
+    height: 12px; }
+    .box .find input[type="checkbox"] {
+      vertical-align: middle; }
+    .box .find .findwd {
+      height: 12px;
+      line-height: 17px; }
+  .box .left {
+    width: 33%;
+    height: 100%;
+    background: #f6f6f6;
+    border: 1px solid #f6f6f6; }
+    .box .left .login_password {
+      margin-top: 43px;
+      margin-left: 10%;
+      margin-bottom: 14px; }
+  .box .middle {
+    width: 33%;
+    height: 100%;
+    border-right: 1px solid #f2f2f2;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2; }
+    .box .middle .must {
+      margin-left: 10%;
+      margin-top: 28px;
+      margin-bottom: 56px; }
+    .box .middle span {
+      color: #d1d1d1; }
+    .box .middle .class {
+      margin: 50px 0 11px 10%; }
+    .box .middle .radio {
+      margin-left: 10%;
+      height: 14px;
+      line-height: 18px;
+      margin-bottom: 49px; }
+      .box .middle .radio label {
+        vertical-align: top; }
+      .box .middle .radio input[id="personal"] {
+        margin-left: 0px; }
+      .box .middle .radio input[id="business"] {
+        margin-left: 102px; }
+  .box .right {
+    width: 33%;
+    height: 100%; }
+
+/*# sourceMappingURL=login_signUp.css.map */

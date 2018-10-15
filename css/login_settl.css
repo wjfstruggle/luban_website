@@ -1,0 +1,197 @@
+.box_left {
+  width: 834px;
+  height: 564px;
+  margin-top: 23px; }
+  .box_left .one {
+    width: 90px;
+    height: 18px;
+    font-size: 16px;
+    margin-bottom: 27px; }
+  .box_left .two {
+    width: 808px;
+    height: 30px;
+    background: #efefef;
+    color: red;
+    padding-left: 26px;
+    line-height: 30px;
+    margin-bottom: 10px; }
+  .box_left .three {
+    width: 100%;
+    height: 378px; }
+    .box_left .three .login_text {
+      width: 302px;
+      height: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 27px;
+      margin-left: 47px; }
+    .box_left .three .login_mail {
+      width: 302px;
+      height: 18px;
+      font-size: 12px;
+      margin-top: 30px;
+      margin-left: 47px; }
+    .box_left .three .mail_input {
+      width: 302px;
+      height: 40px;
+      margin-top: 6px;
+      margin-left: 47px; }
+      .box_left .three .mail_input input[type="text"] {
+        width: 302px;
+        height: 35px;
+        border-radius: 10px;
+        padding-left: 5px; }
+    .box_left .three .three_left {
+      width: 50%;
+      height: 100%;
+      background: #efefef; }
+      .box_left .three .three_left .login_passwork {
+        width: 302px;
+        height: 18px;
+        font-size: 12px;
+        margin-top: 30px;
+        margin-left: 47px; }
+      .box_left .three .three_left .passw_input {
+        width: 302px;
+        height: 40px;
+        margin-top: 6x;
+        margin-left: 47px; }
+        .box_left .three .three_left .passw_input input[type="password"] {
+          width: 302px;
+          height: 35px;
+          border-radius: 10px;
+          padding-left: 5px; }
+      .box_left .three .three_left input[type="submit"] {
+        width: 302px;
+        height: 40px;
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        background-color: #584c4c;
+        border-radius: 10px;
+        margin-top: 30px;
+        margin-left: 47px;
+        cursor: pointer; }
+      .box_left .three .three_left .find {
+        width: 302px;
+        height: 13px;
+        margin-top: 26px;
+        margin-left: 47px; }
+        .box_left .three .three_left .find label {
+          line-height: 13px; }
+        .box_left .three .three_left .find input[type="checkbox"] {
+          vertical-align: middle; }
+    .box_left .three .three_right {
+      width: 50%;
+      height: 100%;
+      background: #e7e7e7; }
+      .box_left .three .three_right input[type="submit"] {
+        width: 302px;
+        height: 40px;
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        background-color: #584c4c;
+        border-radius: 10px;
+        margin-top: 48px;
+        margin-left: 47px;
+        cursor: pointer; }
+      .box_left .three .three_right .accept {
+        width: 302px;
+        height: 13px;
+        margin-top: 15px;
+        margin-left: 47px; }
+        .box_left .three .three_right .accept input[type="checkbox"] {
+          vertical-align: middle; }
+  .box_left .four {
+    width: 100%;
+    height: 25px;
+    font-size: 23px;
+    font-weight: bold;
+    color: #888888;
+    margin-top: 25px; }
+    .box_left .four span {
+      font-size: 23px;
+      font-weight: bold;
+      color: #000000; }
+  .box_left .five {
+    width: 100%;
+    height: 40px;
+    background: #c0c0c0;
+    margin-top: 6px; }
+    .box_left .five .first {
+      width: 31%;
+      height: 100%;
+      line-height: 40px;
+      font-size: 18px;
+      font-weight: bold;
+      color: white;
+      padding-left: 15px;
+      border-right: 1px solid white; }
+    .box_left .five .third {
+      width: 31%;
+      height: 100%;
+      line-height: 40px;
+      font-size: 18px;
+      font-weight: bold;
+      color: white;
+      padding-left: 15px; }
+
+.box_right {
+  width: 480px;
+  height: 785px;
+  margin-top: 120px;
+  margin-left: 10px;
+  margin-bottom: 420px; }
+  .box_right .A {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid #dadada; }
+    .box_right .A .a {
+      font-size: 18px; }
+  .box_right .B {
+    width: 100%;
+    height: 223px;
+    margin-top: 22px;
+    border-bottom: 1px solid #dadada; }
+    .box_right .B .pic {
+      width: 120px;
+      height: 120px; }
+    .box_right .B .detail {
+      width: 72%;
+      height: 196px;
+      margin-left: 10px;
+      font-size: 12px; }
+      .box_right .B .detail span {
+        color: #b6b6b6; }
+      .box_right .B .detail .row_t {
+        margin-top: 43px; }
+      .box_right .B .detail .row {
+        margin-top: 16px; }
+  .box_right .C {
+    width: 100%;
+    height: 240px;
+    background: #efefef;
+    margin-top: 24px;
+    border: 1px solid #efefef; }
+    .box_right .C span {
+      color: #b6b6b6; }
+    .box_right .C .row_b {
+      width: 80%;
+      margin: 26px auto 0; }
+    .box_right .C .row_c {
+      width: 80%;
+      height: 20px;
+      margin: 45px auto 0;
+      border-top: 1px solid #dadada; }
+    .box_right .C .row_d {
+      width: 80%;
+      font-size: 16px;
+      margin: 0 auto 0; }
+      .box_right .C .row_d div {
+        font-size: 16px; }
+
+/*# sourceMappingURL=login_settl.css.map */

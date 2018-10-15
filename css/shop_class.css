@@ -1,0 +1,278 @@
+.shop_class_con {
+  width: 1200px;
+  margin: 20px auto; }
+  .shop_class_con .shop_list {
+    width: 180px;
+    float: left;
+    margin-top: 2px;
+    box-shadow: 1px 1px 5px #b8b8b8; }
+    .shop_class_con .shop_list .shop_list_one {
+      width: 100%;
+      text-decoration: none;
+      box-sizing: border-box; }
+      .shop_class_con .shop_list .shop_list_one .shop_list_span {
+        height: 0px;
+        width: 180px;
+        overflow: hidden;
+        position: relative;
+        transition: all 3s; }
+        .shop_class_con .shop_list .shop_list_one .shop_list_span > span {
+          display: block;
+          height: 40px;
+          line-height: 40px;
+          width: 180px; }
+          .shop_class_con .shop_list .shop_list_one .shop_list_span > span > a {
+            padding-left: 50px;
+            color: #eee; }
+        .shop_class_con .shop_list .shop_list_one .shop_list_span > span:hover {
+          background: #EEE; }
+          .shop_class_con .shop_list .shop_list_one .shop_list_span > span:hover > a {
+            color: #222222; }
+      .shop_class_con .shop_list .shop_list_one:hover .shop_list_span {
+        height: 200px; }
+      .shop_class_con .shop_list .shop_list_one i.iconfont {
+        color: black;
+        margin-left: 20px; }
+      .shop_class_con .shop_list .shop_list_one:hover {
+        height: 100%;
+        transition: all 500ms;
+        background: #252b38; }
+        .shop_class_con .shop_list .shop_list_one:hover i.iconfont {
+          color: white; }
+        .shop_class_con .shop_list .shop_list_one:hover h3 {
+          color: white; }
+      .shop_class_con .shop_list .shop_list_one:hover ul {
+        display: none; }
+      .shop_class_con .shop_list .shop_list_one > ul {
+        display: none;
+        width: 100%; }
+      .shop_class_con .shop_list .shop_list_one > h3 {
+        font-size: 16px;
+        color: black;
+        height: 40px;
+        line-height: 40px;
+        display: inline-block;
+        font-family: fixedsys;
+        margin-left: 10px; }
+      .shop_class_con .shop_list .shop_list_one > ul > li {
+        height: 40px;
+        line-height: 40px;
+        list-style-type: none;
+        background: white;
+        text-align: left;
+        transition: all 300ms; }
+        .shop_class_con .shop_list .shop_list_one > ul > li > a {
+          color: #222;
+          font-size: 14px;
+          text-spacing: 10px;
+          display: block;
+          width: 100%;
+          height: 100%;
+          padding-left: 50px; }
+        .shop_class_con .shop_list .shop_list_one > ul > li:hover {
+          background: #eee; }
+        .shop_class_con .shop_list .shop_list_one > ul > li:hover ul {
+          box-shadow: 0px 5px 8px #222222; }
+  .shop_class_con .shop_show {
+    width: 1000px;
+    float: right; }
+    .shop_class_con .shop_show .shop_show_banner {
+      width: 100%;
+      height: 300px;
+      box-sizing: border-box; }
+      .shop_class_con .shop_show .shop_show_banner > img {
+        width: 1000px; }
+    .shop_class_con .shop_show .shop_show_info {
+      width: 100%;
+      height: 100px;
+      box-sizing: border-box;
+      padding: 10px;
+      background: #eee;
+      margin-top: 5px;
+      margin-bottom: 5px; }
+      .shop_class_con .shop_show .shop_show_info .info_one {
+        width: 100%;
+        height: 25px;
+        line-height: 25px; }
+        .shop_class_con .shop_show .shop_show_info .info_one .info_title {
+          width: 60px;
+          font-size: 14px;
+          color: #666;
+          display: inline-block; }
+        .shop_class_con .shop_show .shop_show_info .info_one .info_title_text {
+          display: inline-block;
+          padding-left: 20px; }
+    .shop_class_con .shop_show .shop_show_nav {
+      width: 100%;
+      height: 50px;
+      background: #eee;
+      line-height: 50px;
+      vertical-align: top; }
+      .shop_class_con .shop_show .shop_show_nav .shop_sort {
+        margin: 0 10px; }
+    .shop_class_con .shop_show .shop_show_main {
+      width: 100%; }
+      .shop_class_con .shop_show .shop_show_main .main_list {
+        width: 100%;
+        height: 340px;
+        overflow: hidden; }
+        .shop_class_con .shop_show .shop_show_main .main_list .main_list_text {
+          position: relative;
+          overflow: hidden; }
+          .shop_class_con .shop_show .shop_show_main .main_list .main_list_text .shop_buy {
+            width: 60px;
+            height: 20px;
+            position: absolute;
+            right: 0px;
+            bottom: 5px;
+            display: none; }
+        .shop_class_con .shop_show .shop_show_main .main_list .main_list_text:hover .shop_buy {
+          animation: run 1s;
+          display: block; }
+        .shop_class_con .shop_show .shop_show_main .main_list img {
+          width: 238px; }
+        .shop_class_con .shop_show .shop_show_main .main_list .main_margin {
+          margin-left: 13px; }
+        .shop_class_con .shop_show .shop_show_main .main_list .main_list_one {
+          width: 24%;
+          height: 335px;
+          float: left;
+          border: 1px solid #CCCCCC;
+          box-sizing: border-box; }
+          .shop_class_con .shop_show .shop_show_main .main_list .main_list_one .main_list_text {
+            padding: 10px; }
+            .shop_class_con .shop_show .shop_show_main .main_list .main_list_one .main_list_text > h5 {
+              height: 20px;
+              line-height: 20px;
+              font-size: 12px; }
+            .shop_class_con .shop_show .shop_show_main .main_list .main_list_one .main_list_text > p {
+              height: 20px;
+              line-height: 20px;
+              font-size: 10px; }
+        .shop_class_con .shop_show .shop_show_main .main_list .main_list_one:hover, .shop_class_con .shop_show .shop_show_main .main_list .main_list_three:hover, .shop_class_con .shop_show .shop_show_main .main_list .main_list_two:hover {
+          box-shadow: 0px 5px 5px #999; }
+        .shop_class_con .shop_show .shop_show_main .main_list .main_list_two, .shop_class_con .shop_show .shop_show_main .main_list .main_list_three {
+          width: 24%;
+          height: 335px;
+          float: left;
+          border: 1px solid #CCCCCC;
+          box-sizing: border-box; }
+          .shop_class_con .shop_show .shop_show_main .main_list .main_list_two .main_list_text, .shop_class_con .shop_show .shop_show_main .main_list .main_list_three .main_list_text {
+            padding: 10px; }
+            .shop_class_con .shop_show .shop_show_main .main_list .main_list_two .main_list_text > h5, .shop_class_con .shop_show .shop_show_main .main_list .main_list_three .main_list_text > h5 {
+              height: 20px;
+              line-height: 20px;
+              font-size: 12px; }
+            .shop_class_con .shop_show .shop_show_main .main_list .main_list_two .main_list_text > p, .shop_class_con .shop_show .shop_show_main .main_list .main_list_three .main_list_text > p {
+              height: 20px;
+              line-height: 20px;
+              font-size: 10px; }
+@keyframes run {
+  0% {
+    transform: translateX(70px); }
+  100% {
+    transform: translateX(0px); } }
+@keyframes bigg {
+  0% {
+    transform: scale(1); }
+  100% {
+    transform: scale(1.2); } }
+.shop_other {
+  width: 1200px;
+  margin: 0 auto 50px; }
+  .shop_other .shop_show_part1 {
+    width: 1200px;
+    height: 500px; }
+    .shop_other .shop_show_part1 .show_part1_title {
+      width: 1200px;
+      height: 100px; }
+      .shop_other .shop_show_part1 .show_part1_title .title_h1 {
+        text-align: center;
+        width: 300px;
+        height: 80px;
+        margin: 0 auto;
+        padding-top: 30px; }
+        .shop_other .shop_show_part1 .show_part1_title .title_h1 > h1 {
+          font-size: 32px;
+          font-family: "courier new"; }
+    .shop_other .shop_show_part1 .show_part1_img {
+      width: 1200px;
+      height: 400px; }
+  .shop_other .shop_show_part2 {
+    width: 1200px;
+    height: 300px; }
+    .shop_other .shop_show_part2 .show_part2_title {
+      width: 1200px;
+      height: 20px; }
+    .shop_other .shop_show_part2 .show_part2_title:hover {
+      box-shadow: 0px 5px 8px #222222; }
+    .shop_other .shop_show_part2 .show_part2_img {
+      width: 1200px;
+      height: 280px;
+      background: #eee; }
+      .shop_other .shop_show_part2 .show_part2_img .show_part2_1 {
+        width: 360px;
+        height: 280px;
+        float: left;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        background: #222222; }
+        .shop_other .shop_show_part2 .show_part2_img .show_part2_1 > img {
+          opacity: 0.7; }
+        .shop_other .shop_show_part2 .show_part2_img .show_part2_1 > img:hover {
+          animation: bigg 1s;
+          animation-fill-mode: forwards; }
+        .shop_other .shop_show_part2 .show_part2_img .show_part2_1 .show_part_price {
+          width: 360px;
+          height: 50px;
+          position: absolute;
+          left: 0;
+          bottom: -50px;
+          background: #222222;
+          opacity: 0.9;
+          text-align: center;
+          line-height: 50px;
+          z-index: 5;
+          transition: bottom 0.5s; }
+          .shop_other .shop_show_part2 .show_part2_img .show_part2_1 .show_part_price > a {
+            color: #fff;
+            font-size: 14px; }
+        .shop_other .shop_show_part2 .show_part2_img .show_part2_1 .show_part_price2 {
+          width: 120px;
+          height: 50px;
+          position: absolute;
+          bottom: 0;
+          right: -120px;
+          opacity: 0.9;
+          text-align: center;
+          line-height: 50px;
+          z-index: 5;
+          transition: right 1s linear 0.5s; }
+          .shop_other .shop_show_part2 .show_part2_img .show_part2_1 .show_part_price2 > a {
+            color: crimson;
+            font-size: 14px; }
+      .shop_other .shop_show_part2 .show_part2_img .show_part2_1:hover .show_part_price2 {
+        right: 0px; }
+      .shop_other .shop_show_part2 .show_part2_img .show_part2_1:hover .show_part_price {
+        bottom: 0px; }
+      .shop_other .shop_show_part2 .show_part2_img .show_part2_1:hover img {
+        opacity: 1; }
+      .shop_other .shop_show_part2 .show_part2_img .show_part2_1:hover {
+        box-shadow: 0px 5px 8px #222222; }
+      .shop_other .shop_show_part2 .show_part2_img .show_part2_two {
+        margin-left: 60px; }
+      .shop_other .shop_show_part2 .show_part2_img .show_part2_three {
+        margin-left: 60px; }
+
+.to_top {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  box-shadow: 1px 1px 1px #535353;
+  position: fixed;
+  bottom: 50px;
+  right: 10px; }
+
+/*# sourceMappingURL=shop_class.css.map */

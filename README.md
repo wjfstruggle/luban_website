@@ -3,6 +3,8 @@
 #### 项目介绍
 鲁班商城
 
+[演示地址](https://struggle-wjf.gitee.io/luban_shop/)
+
 #### 软件架构
 软件架构说明
 

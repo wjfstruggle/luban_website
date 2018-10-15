@@ -1,0 +1,257 @@
+@charset "utf-8";
+
+@mixin e{padding-left: 5px;}
+//左边部分
+//左边容器
+.box_left{
+    width: 834px;
+    height: 564px;
+    margin-top: 23px;
+    
+    //第一步,我的购物车
+    .one{
+        width: 90px;
+        height: 18px;
+        font-size: 16px;
+        margin-bottom: 27px;
+        }
+    //第二步，vip文字
+    .two{
+        width: 808px;
+        height: 30px;
+        background: #efefef;
+        color: red;
+        padding-left: 26px;
+        line-height:30px;
+        margin-bottom: 10px;
+    }
+    //第三步，表单开始
+    .three{
+        width: 100%;
+        height: 378px;
+        
+        //文字格式和邮箱填写格式公共部分
+        .login_text{
+                width: 302px;
+                height: 20px;
+                font-size: 18px;
+                font-weight: bold;
+                margin-top: 27px;
+                margin-left: 47px;
+            }
+            .login_mail{
+                width: 302px;
+                height: 18px;
+                font-size: 12px;
+                margin-top: 30px;
+                margin-left: 47px;
+            }
+            .mail_input{
+                width: 302px;
+                height: 40px;
+                margin-top: 6px;
+                margin-left: 47px;
+                input[type="text"]{
+                 width: 302px;
+                 height: 35px;
+                 border-radius:10px;
+                 @include e;   
+                }
+            }
+        //左边表单开始，登录结算
+        .three_left{
+            width: 50%;
+            height: 100%;
+            background: #efefef;
+            
+            //密码输入
+            .login_passwork{
+                width: 302px;
+                height: 18px;
+                font-size: 12px;
+                margin-top: 30px;
+                margin-left: 47px;
+            }
+            //密码输入框
+            .passw_input{
+                width: 302px;
+                height: 40px;
+                margin-top: 6x;
+                margin-left: 47px;
+                input[type="password"]{
+                 width: 302px;
+                 height: 35px;
+                 border-radius:10px;
+                 @include e;   
+                }
+            }
+            //登录按钮
+            input[type="submit"]{
+               width: 302px;
+               height: 40px;
+               font-size: 18px;
+               font-weight: bold;
+               color: white;
+               background-color: #584c4c;
+               border-radius:10px;
+               margin-top: 30px;
+               margin-left: 47px;
+               cursor: pointer; 
+                }
+            //记住密码
+            .find{
+                width: 302px;
+                height: 13px;
+                margin-top: 26px;
+                margin-left: 47px;
+                label{
+                    line-height: 13px;
+                }
+                input[type="checkbox"]{
+                    vertical-align: middle;
+                } 
+            }
+        }
+        //左边表单结束，游客结算开始
+        .three_right{
+            width: 50%;
+            height: 100%;
+            background: #e7e7e7;
+            //游客结算按钮
+            input[type="submit"]{
+                   width: 302px;
+                   height: 40px;
+                   font-size: 18px;
+                   font-weight: bold;
+                   color: white;
+                   background-color: #584c4c;
+                   border-radius:10px;
+                   margin-top: 48px;
+                   margin-left: 47px;
+                   cursor: pointer; 
+                }
+                //勾选框，接受信息
+            .accept{
+                width: 302px;
+                height: 13px;
+                margin-top: 15px;
+                margin-left: 47px;
+                input[type="checkbox"]{
+                    vertical-align: middle;
+                } 
+            }
+        }
+    }
+    //第四步开始，轻松3步完成购物
+    .four{
+        width: 100%;
+        height: 25px;
+        font-size: 23px;
+        font-weight: bold;
+        color: #888888;
+        margin-top: 25px;
+        span{
+            font-size: 23px;
+            font-weight: bold;
+            color: #000000;}
+    }
+    //第五步开始，底部白色文字
+    .five{
+        width: 100%;
+        height: 40px;
+        background: #c0c0c0;
+        margin-top: 6px;
+        .first{
+            width: 31%;
+            height: 100%;
+            line-height: 40px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            padding-left: 15px;
+            border-right: 1px solid white;
+        }
+        .third{
+            width: 31%;
+            height: 100%;
+            line-height: 40px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            padding-left: 15px;
+        }
+    }
+}
+//右边部分
+//右边的容器
+.box_right{
+    width: 480px;
+    height: 785px;
+    margin-top: 120px;
+    margin-left: 10px;
+    margin-bottom: 420px;
+    
+//第一步，我的购物车标题   
+    .A{
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        font-size: 18px;
+        font-weight: bold;
+        border-bottom: 1px solid #dadada;
+        .a{
+            font-size: 18px;
+        }
+    }
+    //第二步，商品描述
+    .B{
+        width: 100%;
+        height: 223px;
+        margin-top: 22px;
+        border-bottom: 1px solid #dadada;
+        //图片
+        .pic{
+            width: 120px;
+            height: 120px;
+        }
+        .detail{
+            width: 72%;
+            height: 196px;
+            margin-left: 10px;
+            font-size: 12px;
+            span{color: #b6b6b6;}
+            .row_t{
+                margin-top: 43px;
+            }
+            .row{
+                margin-top: 16px;
+            }
+        }
+    }
+    //第三步，结算
+    .C{
+        width: 100%;
+        height: 240px;
+        background: #efefef;
+        margin-top: 24px;
+        border: 1px solid #efefef;
+        span{color: #b6b6b6;}
+        .row_b{
+            width: 80%;
+            margin: 26px auto 0;
+        }
+        .row_c{
+             width: 80%;
+             height: 20px;
+            margin: 45px auto 0;
+            border-top: 1px solid #dadada;
+        }
+        .row_d{
+            width: 80%;
+            font-size: 16px;
+            margin: 0 auto 0;
+            div{font-size: 16px;}
+        }
+    }
+}
+

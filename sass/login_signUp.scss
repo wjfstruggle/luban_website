@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+.web{
+    width: 1330px;
+}
+@mixin a{font-weight: bold;}
+@mixin b{border-radius: 5px;}
+@mixin c{font-size: 18px;}
+@mixin d{margin-left: 10%;}
+@mixin e{padding-left: 5px;}
+//容器
+.box{
+    width: 80%;
+    height: 1145px;
+    margin: 25px auto 170px;
+    
+    //页面公共样式
+    //登录字样
+        .login_text{
+            margin-top: 45px;
+            margin-left: 10%;
+            @include a;
+            @include c;
+        }
+        //邮箱字样
+        .login_mail{
+            margin-top: 28px;
+            margin-left: 10%;
+            margin-bottom: 14px;
+            line-height: 20px;  
+        }
+        //邮箱输入框
+        input[type="text"]{
+            display: block;
+            margin: 0 0 0 10%;
+            width: 80%;
+            height: 38px;
+            @include b;
+            @include e;
+        }
+        //密码输入框
+        input[type="password"]{
+            display: block;
+            margin: 0 0 0 10%;
+            width: 80%;
+            height: 38px;
+            @include b;
+            @include e;
+        }
+        //登录按钮
+        input[type="submit"]{
+            display: block;
+            margin: 43px 0 0 10%;
+            width: 80%;
+            height: 38px;
+            @include b;
+            background: #584c4c;
+            color: white;
+            @include a ;
+            @include c;
+            cursor: pointer;
+        }
+        //记住密码
+        .find{
+            margin: 35px 0 0 10%;
+            width: 80%;
+            height: 12px;
+            input[type="checkbox"]{
+                vertical-align: middle;}
+            .findwd{height: 12px;
+            line-height: 17px;}
+        }
+    //左边部分
+    .left{
+        width: 33%;
+        height: 100%;
+        background: #f6f6f6;
+        border:1px solid #f6f6f6;
+        
+        //密码字样
+        .login_password{
+            margin-top: 43px;
+            margin-left: 10%;
+            margin-bottom: 14px; 
+        }
+        }
+        
+    //中间部分
+    .middle{
+        width: 33%;
+        height: 100%;
+        border-right: 1px solid #f2f2f2;
+        border-top: 1px solid #f2f2f2;
+        border-bottom: 1px solid #f2f2f2;
+        //须知
+        .must{
+            @include d;
+            margin-top: 28px;
+            margin-bottom: 56px;
+        }
+        //字体变白
+        span{color: #d1d1d1;}
+        //类别
+        .class{
+            
+            margin:50px 0 11px 10%;
+        }
+        //个人企业单选框
+        .radio{
+            
+            @include d;
+            height: 14px;
+            line-height: 18px;
+            margin-bottom: 49px;
+            label{
+                vertical-align: top;
+            }
+            input[id="personal"]{
+                margin-left: 0px;
+            }
+            input[id="business"]{
+                margin-left: 102px;
+            }
+            }
+    }
+    //右边部分
+    .right{
+        width: 33%;
+        height: 100%;
+    }
+}
+

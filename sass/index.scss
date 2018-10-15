@@ -1,0 +1,637 @@
+@charset "utf-8";
+// 鲁班兄弟商城首页
+// 轮播图
+#banner {
+    height: 549px;
+    overflow: hidden;
+    img {
+        width: 100%;
+        &:hover {
+            filter: brightness(120%);
+            -webkit-filter: brightness(120%);
+        }
+    }
+}
+
+// 最右侧导航栏个人信息
+#personal_info {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 38px;
+    height: 100%;
+    background-color: #565656;
+    z-index: 999;
+    .info {
+        position: relative;
+        text-align: center;
+        margin-top: 100px;
+        div {
+            position: relative;
+            padding: 17px 0;
+            >a {
+                display: block;
+                color: #e5e5e5;
+            }
+            i {
+                display: block;
+                margin-top: 3px;
+            }
+            p {
+                margin: 3px 0;
+            }
+        }
+        div:hover span {
+            display: block;
+            transform: translateX(-145px);
+        }
+        .feedback {
+            padding-top: 30px;
+        }
+        span {
+            position: absolute;
+            top: 20px;
+            display: none;
+            width: 150px;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 10px;
+            opacity: .8;
+            background: #565656;
+            text-align: center;
+            color: #fff;
+            a {
+                color: #00FFFF;
+            }
+        }
+        .cart {
+            >span {
+                top: 36%;
+            }
+        }
+        .feedback {
+            span {
+                top: 60%;
+            }
+        }
+    }
+}
+
+// 最右侧导航栏个人信息 end
+// 中间详情商品信息 s
+#middle_detail {
+    padding: 52px 0;
+    background-color: #f1f1f1;
+}
+
+// 品牌特卖 s
+// 继承相同样式
+@mixin detail_animation {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 315px;
+    height: 315px;
+    z-index: 10;
+    background-color: rgba(150, 50, 100, 0.5);
+    -webkit-transition: transform .5s ease;
+    transition: transform .5s ease;
+}
+
+#title {
+    position: relative;
+    .title_1,
+    .brand,
+    .person {
+        a {
+            display: block;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &:hover .buy {
+            -webkit-animation-timing-function: ease-out;
+            -webkit-animation-name: lightSpeedIn;
+            -webkit-animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            -webkit-animation-delay: 0.5s;
+            animation-timing-function: ease-out;
+            animation-name: lightSpeedIn;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            animation-delay: 0.5s;
+        }
+        .buy {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 100px;
+            height: 80px;
+            color: #fff;
+            z-index: 20;
+            -webkit-transform: translate(-100px, 0);
+            transform: translate(-100px, 0);
+            a {
+                color: #fff;
+                &:hover {
+                    color: rgba(150, 50, 100, 0.5);
+                }
+            }
+            p:first-child {
+                font-size: 18px;
+            }
+            p:nth-child(2) {
+                font-size: 14px;
+                margin: 9px 0 16px 0;
+            }
+        }
+    }
+    @-webkit-keyframes lightSpeedIn {
+        from {
+            -webkit-transform: translate(-100px, 0) skew(30deg);
+            transform: translate(-100px, 0) skew(30deg);
+            opacity: 0;
+        }
+        60% {
+            -webkit-transform: skew(-20deg);
+            transform: skew(-20deg);
+            opacity: 1;
+        }
+        80% {
+            -webkit-transform: skew(5deg);
+            transform: skew(5deg);
+        }
+        to {
+            -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+        }
+    }
+    @keyframes lightSpeedIn {
+        from {
+            -webkit-transform: translate(-100px, 00) skew(30deg);
+            transform: translate(-100px, 0) skew(30deg);
+            opacity: 0;
+        }
+        60% {
+            -webkit-transform: skew(-20deg);
+            transform: skew(-20deg);
+            opacity: 1;
+        }
+        80% {
+            -webkit-transform: skew(5deg);
+            transform: skew(5deg);
+        }
+        to {
+            -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+        }
+    }
+    .person {
+        margin: 0 40px 0 20px;
+        position: relative;
+        width: 640px;
+        height: 315px;
+        overflow: hidden;
+        &:hover::before {
+            transform: translate(-35px, 170px) rotate(50deg);
+            -webkit-transform: translate(-35px, 170px) rotate(50deg);
+        }
+        &:hover::after {
+            transform: translate(35px, -170px) rotate(50deg);
+            -webkit-transform: translate(35px, -170px) rotate(50deg);
+        }
+        &::before {
+            @include detail_animation;
+            top: -310px;
+            left: 50%;
+            transform: translateX(-60px) rotate(50deg);
+            -webkit-transform: translateX(-60px) rotate(50deg);
+        }
+        &::after {
+            @include detail_animation;
+            bottom: -310px;
+            -webkit-transform: translateX(60px) rotate(50deg);
+            transform: translateX(60px) rotate(50deg);
+        }
+    }
+    .title_1,
+    .brand,
+    {
+        position: relative;
+        width: 315px;
+        height: 315px;
+        overflow: hidden;
+        &:hover::before {
+            -webkit-transform: translate(-35px, 160px) rotate(50deg);
+            transform: translate(-35px, 160px) rotate(50deg);
+        }
+        &:hover::after {
+            -webkit-transform: translate(35px, -160px) rotate(50deg);
+            transform: translate(35px, -160px) rotate(50deg);
+        }
+        &::before {
+            @include detail_animation;
+            top: -309px;
+            -webkit-transform: translateX(-60px) rotate(50deg);
+            transform: translateX(-60px) rotate(50deg);
+        }
+        &::after {
+            @include detail_animation;
+            bottom: -309px;
+            -webkit-transform: translateX(60px) rotate(50deg);
+            transform: translateX(60px) rotate(50deg);
+        }
+    }
+}
+
+// 高仪
+#probe {
+    padding: 52px 0;
+    ul {
+        float: left;
+        height: 104px;
+        li {
+            width: 132px;
+            height: 104px;
+            text-align: center;
+            float: left;
+            border-right: 1px solid #b5b5b5;
+            &:hover {
+                color: #fff;
+            }
+            // 背景图动画
+            .brand-logo-pic,
+            .brand-logo-pic1 {
+                transition: background 1.2s linear;
+            }
+            .brand-logo-pic {
+                background: url(../image/index/probe_bg.png) no-repeat;
+                width: 100%;
+                height: 104px;
+                &:hover {
+                    background: url(../image/index/probe_bg_1.png) no-repeat;
+                }
+            }
+            .brand-logo-pic1 {
+                background: url(../image/index/change_img.png) no-repeat;
+                width: 100%;
+                height: 104px;
+                &:hover {
+                    background: #313131;
+                }
+            }
+            &:last-child {
+                border: none;
+            }
+        }
+        span {
+            position: relative;
+            bottom: 17px;
+            font-size: 14px;
+        }
+    }
+}
+
+$rgba_color:rgba(50, 50, 50, 0.4);
+// 创意家居
+@mixin img_wid {
+    width: 315px;
+    height: 738px;
+    img {
+        width: 100%;
+        height: 100%;
+        vertical-align: top;
+    }
+}
+
+@mixin box_shadow {
+    box-shadow: 0px 0px 20px $rgba_color;
+}
+
+#household {
+    table {
+        width: 100%;
+        height: 1249px;
+        tr {
+            .padding_no {
+                padding-left: 0;
+            }
+            &:first-child td:nth-child(2),
+            &:first-child td:nth-child(3) {
+                padding-bottom: 18px;
+            }
+            img {
+                &:hover {
+                    @include box_shadow;
+                }
+            }
+        }
+        td {
+            padding-left: 20px;
+            width: 315px;
+            overflow: hidden;
+            h4 {
+                font-size: 12px;
+                line-height: 30px;
+                color: #707070;
+                font-weight: 500;
+                display: block;
+                margin-left: 20px;
+            }
+            p {
+                font-size: 10px;
+                color: #707070;
+                line-height: 22px;
+                margin-right: 20px;
+                margin-left: 20px;
+            }
+            .index-contant-first {
+                width: 315px;
+                height: 826px;
+                background: #FFFFFF;
+                .len {
+                    @include img_wid;
+                }
+            }
+            .index-contant-third {
+                width: 654px;
+                height: 403px;
+                margin: 0;
+                background: #FFFFFF;
+                .wid {
+                    width: 654px;
+                    height: 315px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        vertical-align: top;
+                    }
+                }
+            }
+            .index-contant-second {
+                width: 315px;
+                height: 403px;
+                background: #FFFFFF;
+                .normal {
+                    width: 315px;
+                    height: 315px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        vertical-align: top;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 广告
+#ad {
+    padding: 42px 0 52px 0;
+    div {
+        width: 1330px;
+        height: 120px;
+        a {
+            display: block;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+$color_shop:#a5643c;
+// 商品楼层一,商品楼层二公共样式
+#shop_first {
+    width: 100%;
+    .shop_first_top {
+        margin-bottom: 18px;
+        border-bottom: 1px solid $color_shop;
+        span {
+            display: inline-block;
+            &:first-child {
+                padding: 7px 10px;
+                background-color: $color_shop;
+                color: #fff;
+                font-size: 14px;
+            }
+            &:last-child {
+                padding: 7px 11px;
+                border-bottom: 1px solid $color_shop;
+            }
+        }
+    }
+    ul {
+        line-height: 27px;
+        li {
+            margin-right: 22px;
+            a {
+                display: inline-block;
+                color: #535353;
+            }
+            &:nth-child(6) a {
+                color: $color_shop;
+            }
+        }
+    }
+    .shop_first_detail {
+        width: 264px;
+        text-align: center;
+        font-size: 0;
+        div {
+            height: 355px;
+            a {
+                display: block;
+                img {
+                    width: 100%;
+                }
+            }
+            span {
+                top: -21px;
+                position: relative;
+                color: #535353;
+            }
+        }
+        .box_first {
+            position: relative;
+            width: 264px;
+            height: 118px;
+            background-color: $color_shop;
+            .logo_bg {
+                position: absolute;
+                display: block;
+                right: 10px;
+                z-index: 10;
+                bottom: 10px;
+                img {
+                    filter: grayscale(1) brightness(0.7);
+                    -webkit-filter: grayscale(1) brightness(0.7);
+                }
+            }
+            h2 {
+                padding-top: 30px;
+                font-size: 22px;
+                color: #fff;
+            }
+            h3 {
+                font-size: 16px;
+                line-height: 26px;
+                color: #fff;
+            }
+        }
+    }
+    .shop_first_detail_r {
+        background-color: #fff;
+        >div {
+            position: relative;
+            width: 263px;
+            height: 236px;
+            h2,
+            h3 {
+                margin-left: 14px;
+            }
+            h2 {
+                margin-top: 17px;
+                font-size: 16px;
+                color: #535353;
+            }
+            h3 {
+                line-height: 25px;
+                color: $color_shop;
+            }
+            .center_img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}
+
+// 商品楼层二
+$color_tow: #607591;
+#shop_tow {
+    width: 100%;
+    padding-top: 52px;
+    .shop_first_top {
+        margin-bottom: 18px;
+        border-bottom: 1px solid $color_tow;
+        span {
+            display: inline-block;
+            &:first-child {
+                padding: 8px 10px;
+                background-color: $color_tow;
+                color: #fff;
+                font-size: 14px;
+            }
+            &:last-child {
+                padding: 8px 11px;
+                border-bottom: 1px solid $color_tow;
+            }
+        }
+    }
+    ul {
+        line-height: 27px;
+        li {
+            margin-right: 22px;
+            a {
+                display: inline-block;
+                color: #535353;
+            }
+            &:nth-child(6) a {
+                color: $color_tow;
+            }
+        }
+    }
+    .shop_first_detail {
+        width: 264px;
+        text-align: center;
+        font-size: 0;
+        div {
+            height: 355px;
+            a {
+                display: block;
+                img {
+                    width: 100%;
+                }
+            }
+            span {
+                top: -21px;
+                position: relative;
+                color: #535353;
+            }
+        }
+        .box_first {
+            position: relative;
+            width: 264px;
+            height: 118px;
+            background-color: $color_tow;
+            .logo_bg {
+                position: absolute;
+                display: block;
+                right: 10px;
+                z-index: 10;
+                bottom: 10px;
+                img {
+                    filter: grayscale(1) brightness(0.7);
+                    -webkit-filter: grayscale(1) brightness(0.7);
+                }
+            }
+            h2 {
+                padding-top: 30px;
+                font-size: 22px;
+                color: #fff;
+            }
+            h3 {
+                font-size: 16px;
+                line-height: 26px;
+                color: #fff;
+            }
+        }
+    }
+    .shop_first_detail_r {
+        background-color: #fff;
+        >div {
+            position: relative;
+            width: 263px;
+            height: 236px;
+            h2,
+            h3 {
+                margin-left: 14px;
+            }
+            h2 {
+                margin-top: 17px;
+                font-size: 16px;
+                color: #535353;
+            }
+            h3 {
+                line-height: 25px;
+                color: $color_tow;
+            }
+            .center_img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}
+
+// 商品楼层一和二图片动画
+.shop_first_detail_r {
+    img {
+        transition: transform 0.5s ease-in;
+        &:hover {
+            border-color: #9a9a9a;
+            box-shadow: 15px 15px 20px $rgba_color;
+            -ms-transform: rotate(10deg) scale(1.05);
+            transform: rotate(10deg) scale(1.05);
+        }
+    }
+}

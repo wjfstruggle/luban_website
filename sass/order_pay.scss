@@ -1,0 +1,96 @@
+@charset "utf-8";
+//鲁班商城登录后结算支付方式
+
+/* 导入public公共文件 */
+@import 'public';
+
+.header_content{
+    @include header_content;
+    .shop_process1,
+    .shop_process2,
+    .shop_process3{
+        span{
+            background-color: #42cc63;
+        }
+        h5{
+            color: #42cc63;
+        }
+        .border1{
+            border-bottom: 3px solid #42cc63;
+            right: 180px;
+        }
+    }
+}
+
+#order_pay{
+    width: 1330px;
+    margin: 30px 0 100px 0;
+    .pay_cashier{
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        background-color: #efefef;
+        p{
+            margin-left: 20px;
+        }
+    }
+    .pay_option{
+        width: 100%;
+        border: 1px solid #efefef;
+        margin: 30px 0;
+        padding-bottom: 70px;
+        &>p{
+            margin: 20px;
+        }
+        &>span{
+            display: block;
+            text-align: center;
+            margin: 30px auto;
+            color: #efefef;
+        }
+        .option_alipay{
+            width: 90%;
+            height: 100px;
+            margin: 20px auto;
+            position: relative;
+            bottom: 0;
+            transition: all 300ms;
+            border: 1px solid #efefef;
+            &:hover{
+                bottom: 5px;
+                cursor: pointer;
+                box-shadow: 1px 1px 5px #b8b8b8;
+            }
+            input{
+                margin-left: 50px;
+                vertical-align: middle;
+                margin-top: -80px;
+                display: none;
+            }
+            input:checked+label{
+                border: 1px solid #42cc63;
+            }
+            label{
+                display: block;
+                width: 100%;
+                height: 100px;
+                img{
+                    margin: 23px 30px;
+                }
+            }
+        }
+    }
+    .confirm_pay{
+        margin-top: 50px;
+        p{
+            line-height: 35px;
+            margin-right: 20px;
+            span{
+                color: red;
+            }
+        }
+        input{
+            @include input_reusing;
+        }
+    }
+}

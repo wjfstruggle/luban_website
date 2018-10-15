@@ -1,0 +1,84 @@
+@charset "utf-8";
+//商品详情页
+
+/* 导入public公共文件 */
+@import 'public';
+
+#commodity_info{
+    width: 1000px;
+    margin: 50px auto;
+    .commodity_img{
+        width: 40%;
+        height: 500px;
+        background-image: url(../image/index/house_2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position:center;
+        img{
+            width: 100%;
+        }
+    }
+    .commodity_cont{
+        width: 50%;
+        padding-left: 10%;
+        .commodity_tittle{
+            width: 100%;
+            &>img{
+                width: 60px;
+            }
+            h1{
+                font-size: 24px;
+                margin: 30px 0 0 20px;
+                font-weight: 900px;
+            }
+        }
+        .commP{
+            font-size: 14px;
+            line-height: 1.5em;
+            color: gray;
+        }
+        .comm_introduce{
+            p{
+                @extend .commP;
+                margin-top: 20px;
+            }
+        }
+        .comm_price{
+            p{
+                @extend .commP;
+                margin-top: 30px;
+                span{
+                    color: red;
+                    font-size: 24px;
+                    font-weight: bold;
+                    margin-right: 10px;
+                }
+            }
+            label{
+                display: block;
+                width: 80px;
+                height: 40px;
+                text-align: center;
+                line-height: 40px;
+                color: gray;
+                border: 1px solid gray;
+                margin: 10px 0 0 10px;
+                background-color: white;
+                cursor: pointer;
+            }
+            input{
+                display: none;
+                &:checked+label{
+                    color: red;
+                    border: 1px solid red;
+                }
+            }
+        }
+        &>a{
+            input{
+                margin-top: 30px;
+                @include input_reusing;
+            }
+        }
+    }
+}

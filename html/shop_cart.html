@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>鲁班商城购物车</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../css/public.css" />
+    <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_851025_3a9ma8v2ay2.css" />
+    <link rel="stylesheet" type="text/css" href="../css/shop_cart.css" />
+    <link rel="shortcut icon" href="../image/public/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <!--首页头部 start-->
+        <header id="header_index">
+            <!--顶部 s-->
+            <div class="top clearfix">
+                <p class="fl inblock">
+                    <a href="login_signUp.html">注册</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="login_settl.html">登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="login_vip.html">VIP登录</a>
+                </p>
+                <p class="fr inblock icon">
+                    <a href="shop_class.html">商家注入</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="order_info.html">我的订单</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a class="icon_1" href="shop_cart.html"><img src="../image/public/cart.png" /><span>(0)</span></a>
+                </p>
+            </div>
+            <!--顶部 e-->
+            <!--导航-->
+            <nav class="nav clearfix">
+                <!--logo-->
+                <div class="header_content clearfix">
+                    <div class="logo fl">
+                        <a href="../index.html"><img src="../image/public/logo.png" title="" /></a>
+                    </div>
+
+                    <!-- 交易流程导向s -->
+                    <div class="shop_process1">
+                        <span>3</span>
+                        <div class="border1"></div>
+                        <h5>提交订单</h5>
+                    </div>
+                    <div class="shop_process2">
+                        <span>2</span>
+                        <div class="border1"></div>
+                        <h5>确认订单信息</h5>
+                    </div>
+                    <div class="shop_process3">
+                        <span>1</span>
+                        <div class="border1"></div>
+                        <h5>购物车</h5>
+                    </div>
+                    <!-- 交易流程导向e -->
+
+                </div>
+
+        </header>
+        <!--首页头部 end-->
+
+
+        <!-- 购物车s -->
+        <section id="shop_cart" class="clearfix">
+            <div class="cart_tittle clearfix">
+                <h5 class="fl">购物车</h5>
+                <span class="fr"><a href="">继续购物</a><i class="iconfont icon-jiantou"></i></span>
+            </div>
+
+            <!-- 表单商品部分s -->
+            <table id="tab1" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <th>
+                        <input type="checkbox" name="" id="shop_all" value="" />
+                        <label for="shop_all">全选</label>
+                    </th>
+                    <th>商品</th>
+                    <th>单价（元）</th>
+                    <th>数量</th>
+                    <th>商品小计（元）</th>
+                    <th>操作</th>
+                </tr>
+                <tr>
+                    <td>
+                        <p>某某直营店</p>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>750.0</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="" id="shop2" value="" />
+                        <label for="shop2"><img src="../image/shop_cart/images/1_03.jpg"/></label>
+                    </td>
+                    <td>
+                        <h5>商品品牌名称</h5>
+                        <span>规格：规格X规格</span>
+                        <span>颜色：白色</span>
+                    </td>
+                    <td>150.00</td>
+                    <td>5</td>
+                    <td>750.00</td>
+                    <td>
+                        <a>收藏</a>
+                        <a>删除</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>某某直营店</p>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>750.0</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="" id="shop4" value="" />
+                        <label for="shop4"><img src="../image/shop_cart/images/1_03.jpg"/></label>
+                    </td>
+                    <td>
+                        <h5>商品品牌名称</h5>
+                        <span>规格：规格X规格</span>
+                        <span>颜色：白色</span>
+                    </td>
+                    <td>150.00</td>
+                    <td>5</td>
+                    <td>750.00</td>
+                    <td>
+                        <a>收藏</a>
+                        <a>删除</a>
+                    </td>
+                </tr>
+            </table>
+            <!-- 表单商品部分e -->
+
+            <!-- 表单结算部分s -->
+            <table class="fr" id="tab2" border="" cellspacing="" cellpadding="">
+                <tr>
+                    <td></td>
+                    <td>订单总额</td>
+                    <td>￥1200.00</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>优惠：</td>
+                    <td>
+                        <h5>-￥0.00</h5>
+                    </td>
+                </tr>
+                <tr>
+                    <td>已经选中<span>6</span>件商品</td>
+                    <td>合计
+                        <h5>（不含运费）</h5>：</td>
+                    <td><span>￥1200.00</span></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <a href="order_info.html"><input type="submit" name="" id="" value="结算" /></a>
+                    </td>
+                </tr>
+            </table>
+            <!-- 表单结算部分e -->
+        </section>
+        <!-- 购物车e -->
+
+        <footer class="footer">
+            <div class="preferential clearfix">
+                <ul>
+                    <li>
+                        <div>
+                            <img src="../image/public/you.png" />
+                        </div>
+                        <div>
+                            <p>品质保障</p>
+                            <p>品质保证 购物无忧</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="../image/public/spacial.png" />
+                        </div>
+                        <div>
+                            <p>特色服务</p>
+                            <p>针对户型 私人定制</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="../image/public/save.png" />
+                        </div>
+                        <div>
+                            <p>全网最低</p>
+                            <p>厂家直销 低价承诺</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="../image/public/help.png" />
+                        </div>
+                        <div>
+                            <p>帮助中心</p>
+                            <p>您的购物指南</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="info clearfix">
+                <dl>
+                    <dt>新手指南</dt>
+                    <dd>新手指南</dd>
+                    <dd>购物流程</dd>
+                </dl>
+                <dl>
+                    <dt>支付方式</dt>
+                    <dd>支付宝</dd>
+                    <dd>微信支付</dd>
+                </dl>
+                <dl>
+                    <dt>物流配送</dt>
+                    <dd>配送方式</dd>
+                    <dd>服务流程</dd>
+                </dl>
+                <dl>
+                    <dt>客服中心</dt>
+                    <dd>在线客服</dd>
+                    <dd>常见问题</dd>
+                </dl>
+                <div class="code fl">
+                    <h2>扫一扫，关注鲁班兄弟</h2>
+                    <span>
+							<img src="../image/public/qr_code.png"/>
+						</span>
+                </div>
+            </div>
+            <p class="fot_bt">
+                <span>Copyright © 2015-2016 QDTG. All rights reserved. 鲁班兄弟 粤ICP16035</span>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="">关于我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="">联系我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="">法律声明</a>
+            </p>
+        </footer>
+
+    </div>
+</body>
+
+</html>

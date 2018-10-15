@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>鲁班商城确认订单信息</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../css/public.css" />
+    <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_851025_3a9ma8v2ay2.css" />
+    <link rel="stylesheet" type="text/css" href="../css/order_info.css" />
+    <link rel="shortcut icon" href="../image/public/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <!--首页头部 start-->
+        <header id="header_index">
+            <!--顶部 s-->
+            <div class="top clearfix">
+                <p class="fl inblock">
+                    <a href="login_signUp.html">注册</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="login_settl.html">登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="login_vip.html">VIP登录</a>
+                </p>
+                <p class="fr inblock icon">
+                    <a href="shop_class.html">商家注入</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="order_info.html">我的订单</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a class="icon_1" href="shop_cart.html"><img src="../image/public/cart.png" /><span>(0)</span></a>
+                </p>
+            </div>
+            <!--顶部 e-->
+            <!--导航-->
+            <nav class="nav clearfix">
+                <!--logo-->
+                <div class="header_content clearfix">
+                    <div class="logo fl">
+                        <a href="../index.html"><img src="../image/public/logo.png" title="" /></a>
+                    </div>
+
+                    <!-- 交易流程导向s -->
+                    <div class="shop_process1">
+                        <span>3</span>
+                        <div class="border1"></div>
+                        <h5>提交订单</h5>
+                    </div>
+                    <div class="shop_process2">
+                        <span>2</span>
+                        <div class="border1"></div>
+                        <h5>确认订单信息</h5>
+                    </div>
+                    <div class="shop_process3">
+                        <span>1</span>
+                        <div class="border1"></div>
+                        <h5>购物车</h5>
+                    </div>
+                    <!-- 交易流程导向e -->
+
+                </div>
+
+        </header>
+        <!--首页头部 end-->
+
+        <!-- 订单信息s -->
+        <section id="order_info">
+            <h3>填写并核对订单信息</h3>
+            <!-- 收货地址s -->
+            <div class="address_info">
+                <div class="user_address">
+                    <p>收货人信息【<a href="">修改</a>】</p>
+                </div>
+                <div class="user_add_info clearfix">
+                    <label for="address1">
+							<div class="address1 fl clearfix">
+								<input type="radio" name="address" id="address1" value="" checked />
+								<label for="address1">
+									姓名：测试<br /><br />
+									地区：广东省深圳市罗湖区<br /><br />
+									地址：保税区<br /><br />
+									手机：1367895454
+								</label>
+                </div>
+                </label>
+                <label for="address2">
+							<div class="address1 fl clearfix">
+								<input type="radio" name="address" id="address2" value="" />
+								<label for="address2">
+									姓名：测试<br /><br />
+									地区：广东省深圳市罗湖区<br /><br />
+									地址：保税区<br /><br />
+									手机：1367895454
+								</label>
+            </div>
+            </label>
+    </div>
+    <div class="user_address">
+        <p>配送方式</p>
+    </div>
+    <div class="distribution">
+        <p>对不起，你的订单无法继续进行，有可能是以下原因：1、送货地址没有填写; 2、你选购的商品在改地区不能配送联系工作人员。</p>
+    </div>
+    </div>
+    <!-- 收货地址e -->
+
+    <!-- 表单商品部分s -->
+    <table id="tab1" border="0" cellspacing="0" cellpadding="0">
+        <h2 class="order_detial">订单详情</h2>
+        <tr>
+            <th>
+                <input type="checkbox" name="" id="shop_all" value="" />
+                <label for="shop_all">全选</label>
+            </th>
+            <th>商品</th>
+            <th>单价（元）</th>
+            <th>数量</th>
+            <th>商品小计（元）</th>
+            <th>操作</th>
+        </tr>
+        <tr>
+            <td>
+                <p>某某直营店</p>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>750.0</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" name="" id="shop2" value="" />
+                <label for="shop2"><img src="../image/shop_cart/images/1_03.jpg"/></label>
+            </td>
+            <td>
+                <h5>商品品牌名称</h5>
+                <span>规格：规格X规格</span>
+                <span>颜色：白色</span>
+            </td>
+            <td>150.00</td>
+            <td>5</td>
+            <td>750.00</td>
+            <td>
+                <a>收藏</a>
+                <a>删除</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>某某直营店</p>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>750.0</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" name="" id="shop4" value="" />
+                <label for="shop4"><img src="../image/shop_cart/images/1_03.jpg"/></label>
+            </td>
+            <td>
+                <h5>商品品牌名称</h5>
+                <span>规格：规格X规格</span>
+                <span>颜色：白色</span>
+            </td>
+            <td>150.00</td>
+            <td>5</td>
+            <td>750.00</td>
+            <td>
+                <a>收藏</a>
+                <a>删除</a>
+            </td>
+        </tr>
+    </table>
+    <!-- 表单商品部分e -->
+
+    <!-- 订单备注s -->
+    <div class="order_remarks">
+        <span>订单备注：</span>
+        <textarea name="" rows="" cols="" placeholder="备注中有关收货人信息、支付方式、配送方式、发票信息等购买要求一律以上面的选择为准，备注无效。"></textarea>
+    </div>
+    <!-- 订单备注e -->
+
+    <!-- 提交订单s -->
+    <div class="place_order clearfix">
+        <p>商品金额：¥750.00元+运费：¥0.00元-优惠券：¥0.00元-储存卡：¥0.00元</p>
+        <div class="place_btn fr clearfix">
+            <h5>你需要为订单支付：<span>¥750.00</span>元</h5>
+            <a href="order_pay.html"><input class="fr" type="button" name="" id="" value="提交订单" /></a>
+        </div>
+    </div>
+    <!-- 提交订单e -->
+    </section>
+    <!-- 订单信息e -->
+
+    <footer class="footer">
+        <div class="preferential clearfix">
+            <ul>
+                <li>
+                    <div>
+                        <img src="../image/public/you.png" />
+                    </div>
+                    <div>
+                        <p>品质保障</p>
+                        <p>品质保证 购物无忧</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="../image/public/spacial.png" />
+                    </div>
+                    <div>
+                        <p>特色服务</p>
+                        <p>针对户型 私人定制</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="../image/public/save.png" />
+                    </div>
+                    <div>
+                        <p>全网最低</p>
+                        <p>厂家直销 低价承诺</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="../image/public/help.png" />
+                    </div>
+                    <div>
+                        <p>帮助中心</p>
+                        <p>您的购物指南</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="info clearfix">
+            <dl>
+                <dt>新手指南</dt>
+                <dd>新手指南</dd>
+                <dd>购物流程</dd>
+            </dl>
+            <dl>
+                <dt>支付方式</dt>
+                <dd>支付宝</dd>
+                <dd>微信支付</dd>
+            </dl>
+            <dl>
+                <dt>物流配送</dt>
+                <dd>配送方式</dd>
+                <dd>服务流程</dd>
+            </dl>
+            <dl>
+                <dt>客服中心</dt>
+                <dd>在线客服</dd>
+                <dd>常见问题</dd>
+            </dl>
+            <div class="code fl">
+                <h2>扫一扫，关注鲁班兄弟</h2>
+                <span>
+							<img src="../image/public/qr_code.png"/>
+						</span>
+            </div>
+        </div>
+        <p class="fot_bt">
+            <span>Copyright © 2015-2016 QDTG. All rights reserved. 鲁班兄弟 粤ICP16035</span>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="">关于我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="">联系我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="">法律声明</a>
+        </p>
+    </footer>
+
+    </div>
+</body>
+
+</html>
